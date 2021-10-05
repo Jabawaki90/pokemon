@@ -1,0 +1,8 @@
+body {
+  background-color: beige;
+  background-image: url("./walll.jpg");
+  background-position: center center;
+  background-size: 110%;
+  backdrop-filter: blur(1px);
+  margin: 0;
+}
