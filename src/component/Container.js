@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { SinglePokemon } from ".";
 import { usePokemonContext } from "../context/pokemonContext";
 import { Link } from "react-router-dom";
-import Rare from "../rare.png";
 
 const Container = () => {
   const { pokemons, single_pokemon } = usePokemonContext();
