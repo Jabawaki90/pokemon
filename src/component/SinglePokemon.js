@@ -49,7 +49,7 @@ const SinglePokemon = ({ name, url }) => {
         />
 
         <div className="container">
-          <h1>{name}</h1>
+          <h1>{name.toUpperCase()}</h1>
           <h2>{id}</h2>
         </div>
       </article>
@@ -61,17 +61,19 @@ const Wrapper = styled.div`
   .card {
     background-color: #a3e4d7;
     width: 250px;
-    border: 2px solid #17202a;
+    border: 5px solid #17202a;
     margin: 5px;
-    .container {
-      display: flex;
-      justify-container: space-between;
-      background-color: #e8f8f5;
-    }
+
     img {
       max-width: 100%;
       max-height: 100%;
       object-fit: contain;
+    }
+
+    .container {
+      display: flex;
+      justify-container: space-between;
+      background-color: #e8f8f5;
     }
   }
 `;

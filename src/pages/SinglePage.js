@@ -5,6 +5,7 @@ import { usePokemonContext } from "../context/pokemonContext";
 import { Details } from "../component";
 import { useParams } from "react-router";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const urls = "https://pokeapi.co/api/v2/pokemon/";
 
@@ -29,9 +30,9 @@ const SinglePage = () => {
   return (
     <Wrapper>
       <div className="container">
-        <div className="button">
+        <Link to="/">
           <button>Back</button>
-        </div>
+        </Link>
 
         <div className="page">
           <img
@@ -60,9 +61,12 @@ const Wrapper = styled.div`
 
     button {
       margin-top: 30px;
-      width: 100px;
-      height: 40px;
       font-size: 20px;
+      border: 2px solid black;
+      padding: 15px;
+      background-color: #fccf00;
+      color: #2468b1;
+      border-radius: 50px;
     }
   }
 

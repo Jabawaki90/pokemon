@@ -11,13 +11,13 @@ const Navbar = () => {
   return (
     <Wrapper>
       <navbar>
-        <Link to="/">
+        <Link className="link" to="/">
           <h1>Home</h1>
         </Link>
         <Link to="/">
           <img src={Logo} alt="" />
         </Link>
-        <Link to={`/pokemon/${single_pokemon.name}`}>
+        <Link className="link" to={`/pokemon/${single_pokemon.name}`}>
           <h1>Details</h1>
         </Link>
       </navbar>
@@ -36,6 +36,15 @@ const Wrapper = styled.section`
     padding-bottom: 50px;
     h1 {
       margin: 50px;
+      border: 2px solid black;
+      padding: 15px;
+      background-color: #fccf00;
+      color: #2468b1;
+      border-radius: 50px;
+    }
+
+    .link {
+      text-decoration: none;
     }
   }
 `;

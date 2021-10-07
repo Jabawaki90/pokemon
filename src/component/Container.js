@@ -12,7 +12,7 @@ const Container = () => {
     return (
       <Wrapper>
         <div className="container">
-          <Link to={`./pokemon/${name}`}>
+          <Link className="link" to={`./pokemon/${name}`}>
             <SinglePokemon name={name} url={url} />
           </Link>
         </div>
@@ -26,7 +26,7 @@ const Container = () => {
         {pokemons.map((poke, id) => {
           const { name, url } = poke;
           return (
-            <Link to={`./pokemon/${name}`}>
+            <Link className="link" to={`./pokemon/${name}`}>
               <SinglePokemon key={id} name={name} url={url} />
             </Link>
           );
@@ -43,6 +43,11 @@ const Wrapper = styled.div`
     flex-wrap: wrap;
     height: 100%;
     width: 100%;
+
+    .link {
+      text-decoration: none;
+      color: black;
+    }
   }
 `;
 
